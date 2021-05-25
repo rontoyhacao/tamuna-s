@@ -9,10 +9,6 @@ html {
           box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -321,17 +317,15 @@ header .header-container {
 
 header .header-container--home::before {
   content: '';
-  background-image: url(/assets/images/hero-splash1.png);
+  background-image: url(/assets/images/hero-splash1-mobile.png);
   background-repeat: no-repeat;
   position: absolute;
-  height: clamp(12rem, calc((416 / 800) * 100vw), 26rem);
-  width: clamp(32rem, calc((896 / 800) * 100vw), 56rem);
+  height: 12rem;
+  width: 100%;
   background-size: cover;
   z-index: -1;
-  right: -8rem;
-  top: -4rem;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  left: 0;
+  top: 0;
 }
 
 header .header-container nav {
@@ -382,6 +376,10 @@ header .header-container nav .logo {
 
 .hero .hero-container_content p {
   margin-bottom: 2rem;
+}
+
+.hero .hero-container_illustration {
+  overflow: hidden;
 }
 
 .hero .hero-container_illustration::before {

@@ -7,18 +7,15 @@ header {
         @include wide-container;
         &--home::before {
             content: '';
-                background-image: url(/assets/images/hero-splash1.png);
+                background-image: url(/assets/images/hero-splash1-mobile.png);
                 background-repeat: no-repeat;
                 position: absolute;
-                // height: 12rem;
-                height: clamp(12rem, calc((416 / 800) * 100vw), 26rem);
-                // width: 32rem;
-                width: clamp(32rem, calc((896 / 800) * 100vw), 56rem);
+                height: 12rem;
+                width: 100%;
                 background-size: cover;
                 z-index: -1;
-                right: -8rem;
-                top: -4rem;
-                transform: rotate(20deg)
+                left: 0;
+                top: 0;
         }
         nav {
             @include space-between;

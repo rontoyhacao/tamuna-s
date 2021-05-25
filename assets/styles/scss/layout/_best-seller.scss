@@ -5,9 +5,11 @@
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
-        &_image img {
-            max-width: 100%;
-            height: auto;
+        &_image {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
         &_content {
             h2 {

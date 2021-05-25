@@ -15,6 +15,7 @@
             }
         }
         &_illustration {
+            overflow: hidden;
             &::before {
                 content: '';
                 background-image: url(/assets/images/hero-splash2.png);
