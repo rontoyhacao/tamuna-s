@@ -462,7 +462,40 @@ header .header-container nav .logo {
   margin-bottom: 2rem;
 }
 
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container h3 {
+  margin-top: 1rem;
+}
+
+.all-our-cakes-are {
+  padding: 2rem 0;
+}
+
+.all-our-cakes-are .all-our-cakes-are-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.all-our-cakes-are .all-our-cakes-are-container h2 {
+  margin-bottom: 2rem;
+}
+
+.all-our-cakes-are .all-our-cakes-are-container ul li {
+  margin-bottom: 2rem;
+}
+
+.all-our-cakes-are .all-our-cakes-are-container ul li svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.all-our-cakes-are .all-our-cakes-are-container ul li h3 {
   margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

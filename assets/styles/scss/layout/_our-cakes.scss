@@ -8,8 +8,14 @@
         }
         .our-cakes-grid li {
             margin-bottom: 2rem;
-            .cake-grid-container h3 {
-                margin-top: 1rem;
+            .cake-grid-container {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                h3 {
+                    margin-top: 1rem;
+                }
             }
         }
     }

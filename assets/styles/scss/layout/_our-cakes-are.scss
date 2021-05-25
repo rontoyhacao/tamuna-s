@@ -1,0 +1,20 @@
+.all-our-cakes-are {
+    padding: 2rem 0;
+    .all-our-cakes-are-container {
+        @include wide-container;
+        text-align: center;
+        h2 {
+            margin-bottom: 2rem;
+        }
+        ul li {
+            margin-bottom: 2rem;
+            svg {
+                width: 4rem;
+                height: 4rem;
+            }
+            h3 {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
