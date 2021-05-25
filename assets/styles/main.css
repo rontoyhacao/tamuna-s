@@ -65,7 +65,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(2rem, calc((48/600) * 100vw), 3rem);
+  font-size: clamp(2rem, calc((64/600) * 100vw), 4rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, calc((56/600) * 100vw), 3.5rem);
 }
 
 p {
@@ -357,7 +361,7 @@ header .header-container nav .logo {
   z-index: 1;
 }
 
-.hero .hero-container .hero-container_content {
+.hero .hero-container_content {
   width: 88%;
   margin: 0 auto;
   max-width: 69rem;
@@ -365,11 +369,11 @@ header .header-container nav .logo {
   margin-top: 2rem;
 }
 
-.hero .hero-container .hero-container_content p {
+.hero .hero-container_content p {
   margin-bottom: 2rem;
 }
 
-.hero .hero-container .hero-container_illustration::before {
+.hero .hero-container_illustration::before {
   content: '';
   background-image: url(/assets/images/hero-splash2.png);
   background-repeat: no-repeat;
@@ -382,7 +386,7 @@ header .header-container nav .logo {
   top: clamp(2rem, calc((192 / 800) * 100vw), 12rem);
 }
 
-.hero .hero-container .hero-container_illustration img {
+.hero .hero-container_illustration img {
   max-width: 100%;
   height: auto;
   margin-left: 2rem;
@@ -393,6 +397,26 @@ header .header-container nav .logo {
 }
 
 .about {
-  padding: 8rem 0 0;
+  padding: 2rem 0 0;
+}
+
+.about .about-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.about .about-container h2 {
+  margin-bottom: 2rem;
+}
+
+.about .about-container_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about .about-container_content h2 {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
