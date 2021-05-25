@@ -1,5 +1,6 @@
 .about {
-    padding: 2rem 0 0;
+    padding: 2rem 0;
+    position: relative;
     .about-container {
         @include wide-container;
         text-align: center;
@@ -14,6 +15,18 @@
             h2 {
                 display: none;
             }
+        }
+        &::before {
+            content: '';
+            background-image: url(/assets/images/leaf.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            transform: rotate(120deg);
+            height: 5rem;
+            width: 5rem;
+            left: 0;
+            bottom: 0;
         }
     }
 }

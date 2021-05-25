@@ -397,7 +397,8 @@ header .header-container nav .logo {
 }
 
 .about {
-  padding: 2rem 0 0;
+  padding: 2rem 0;
+  position: relative;
 }
 
 .about .about-container {
@@ -418,5 +419,30 @@ header .header-container nav .logo {
 
 .about .about-container_content h2 {
   display: none;
+}
+
+.about .about-container::before {
+  content: '';
+  background-image: url(/assets/images/leaf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  height: 5rem;
+  width: 5rem;
+  left: 0;
+  bottom: 0;
+}
+
+.our-cakes .our-cakes-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.our-cakes .our-cakes-container h2 {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
