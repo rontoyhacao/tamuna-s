@@ -1,9 +1,16 @@
 .our-cakes {
+    padding: 2rem 0;
     .our-cakes-container {
         @include wide-container;
         text-align: center;
         h2 {
             margin-bottom: 2rem;
+        }
+        .our-cakes-grid li {
+            margin-bottom: 2rem;
+            .cake-grid-container h3 {
+                margin-top: 1rem;
+            }
         }
     }
 }

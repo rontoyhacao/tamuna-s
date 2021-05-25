@@ -12,6 +12,12 @@ h1 {
 h2 {
     font-size: clamp(1.75rem, calc((56/600) * 100vw), 3.5rem);
 }
+h3 {
+    font-size: clamp(1.25rem, calc((24/600) * 100vw), 1.5rem);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: $primary;
+}
 p {
     line-height: 1.5;
     font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);

@@ -72,6 +72,13 @@ h2 {
   font-size: clamp(1.75rem, calc((56/600) * 100vw), 3.5rem);
 }
 
+h3 {
+  font-size: clamp(1.25rem, calc((24/600) * 100vw), 1.5rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #692511;
+}
+
 p {
   line-height: 1.5;
   font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
@@ -80,7 +87,7 @@ p {
 }
 
 .cta-button {
-  padding: .5em 1em;
+  padding: .5em 2em;
   border: 1px solid #692511;
   border-radius: 2em;
   display: inline-block;
@@ -432,8 +439,12 @@ header .header-container nav .logo {
   height: 5rem;
   width: 5rem;
   left: 0;
-  bottom: 0;
+  bottom: -2rem;
   z-index: -1;
+}
+
+.our-cakes {
+  padding: 2rem 0;
 }
 
 .our-cakes .our-cakes-container {
@@ -445,5 +456,13 @@ header .header-container nav .logo {
 
 .our-cakes .our-cakes-container h2 {
   margin-bottom: 2rem;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li {
+  margin-bottom: 2rem;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container h3 {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
