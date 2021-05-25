@@ -433,6 +433,7 @@ header .header-container nav .logo {
   width: 5rem;
   left: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .our-cakes .our-cakes-container {
