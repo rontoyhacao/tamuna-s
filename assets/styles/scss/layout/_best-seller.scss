@@ -1,0 +1,18 @@
+.best-seller {
+    padding: 2rem 0;
+    .best-seller-container {
+        @include wide-container;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        &_image img {
+            max-width: 100%;
+            height: auto;
+        }
+        &_content {
+            h2 {
+                margin: 1rem 0;
+            }
+        }
+    }
+}

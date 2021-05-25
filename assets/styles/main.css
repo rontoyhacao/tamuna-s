@@ -9,6 +9,10 @@ html {
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -497,5 +501,32 @@ header .header-container nav .logo {
 
 .all-our-cakes-are .all-our-cakes-are-container ul li h3 {
   margin-top: 1rem;
+}
+
+.best-seller {
+  padding: 2rem 0;
+}
+
+.best-seller .best-seller-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.best-seller .best-seller-container_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.best-seller .best-seller-container_content h2 {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */
