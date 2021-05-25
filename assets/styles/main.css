@@ -503,6 +503,7 @@ header .header-container nav .logo {
 
 .best-seller {
   padding: 2rem 0;
+  position: relative;
 }
 
 .best-seller .best-seller-container {
@@ -522,6 +523,19 @@ header .header-container nav .logo {
 .best-seller .best-seller-container_image img {
   max-width: 100%;
   height: auto;
+}
+
+.best-seller .best-seller-container_image::before {
+  content: '';
+  background-image: url(/assets/images/hero-splash1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: clamp(12rem, calc((416 / 800) * 100vw), 26rem);
+  width: clamp(20rem, calc((896 / 800) * 100vw), 56rem);
+  background-size: cover;
+  z-index: -1;
+  right: 0;
+  top: clamp(10rem, calc((352 / 600) * 100vw), 22rem);
 }
 
 .best-seller .best-seller-container_content h2 {
