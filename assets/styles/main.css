@@ -9,6 +9,10 @@ html {
           box-sizing: border-box;
 }
 
+body {
+  background: white;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +60,10 @@ q:before, q:after {
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1, h2 {
@@ -119,6 +127,11 @@ footer span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #692511;
+}
+
+.cta-button:hover {
+  background-color: #692511;
+  color: white;
 }
 
 .form-button {

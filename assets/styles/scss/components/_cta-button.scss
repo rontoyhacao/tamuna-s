@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: $primary;
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
 }
 .form-button {
     background-color: $white;
