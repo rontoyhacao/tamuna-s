@@ -314,6 +314,10 @@ footer span {
   height: 100%;
 }
 
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #692511;
+}
+
 .swiper-slide {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
