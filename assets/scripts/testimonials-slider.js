@@ -1,33 +1,22 @@
-(function () {
-    "use strict";
-  
-    var carousels = function () {
-      $(".owl-carousel1").owlCarousel({
-        loop: true,
-        center: true,
-        margin: 0,
-        responsiveClass: true,
-        nav: false,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          680: {
-            items: 2,
-            nav: false,
-            loop: false
-          },
-          1000: {
-            items: 3,
-            nav: true
-          }
-        }
-      });
-    };
-  
-    (function ($) {
-      carousels();
-    })(jQuery);
-  })();
-  
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // 768: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 40,
+    // },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

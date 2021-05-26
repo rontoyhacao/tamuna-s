@@ -79,11 +79,22 @@ h3 {
   color: #692511;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #692511;
+}
+
 p {
   line-height: 1.5;
   font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
   font-family: 'Montserrat', sans-serif;
   margin: 1rem 0;
+}
+
+a {
+  font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cta-button {
@@ -267,21 +278,17 @@ p {
   transform: rotate(45deg);
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
   text-align: center;
   font-size: 18px;
-  background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,14 +299,19 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-slide h4 {
+  margin-top: 1rem;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -540,5 +552,17 @@ header .header-container nav .logo {
 
 .best-seller .best-seller-container_content h2 {
   margin: 1rem 0;
+}
+
+.testimonials {
+  padding: 2rem 0;
+}
+
+.testimonials .testimonials-container {
+  text-align: center;
+}
+
+.testimonials .testimonials-container h2 {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

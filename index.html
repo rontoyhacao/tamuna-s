@@ -126,7 +126,7 @@
         <section class="best-seller">
             <div class="best-seller-container">
                 <div class="best-seller-container_content">
-                    <h2>Best Seller of All Time</h2>
+                    <h2>Best-seller of All Time</h2>
                     <h3>Strawberry Shortcake</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quae consequuntur debitis enim, quisquam quo, corporis nesciunt voluptatem sequi fugiat molestiae atque voluptatum.</p>
                     <a href="#" class="cta-button">Order Now</a>
@@ -137,22 +137,41 @@
             </div>
         </section>
         <section class="testimonials">
-            <div class="testimonials container">
+            <div class="testimonials-container">
                 <h2>What Our Customers Say</h2>
                 
 
                 <!-- Swiper -->
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/testimonial1new.png" alt="">
+                            <h4>Ron Paolo Toyhacao</h4>
+                            <blockquote>
+                                <p>"Super bet ang lasa, hindi siya sobrang tamis hindi nakakaumay."</p>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/testimonial1new.png" alt="">
+                            <h4>Ron Paolo Toyhacao</h4>
+                            <blockquote>
+                                <p>"Super bet ang lasa, hindi siya sobrang tamis hindi nakakaumay."</p>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/testimonial1new.png" alt="">
+                            <h4>Ron Paolo Toyhacao</h4>
+                            <blockquote>
+                                <p>"Super bet ang lasa, hindi siya sobrang tamis hindi nakakaumay."</p>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/testimonial1new.png" alt="">
+                            <h4>Ron Paolo Toyhacao</h4>
+                            <blockquote>
+                                <p>"Super bet ang lasa, hindi siya sobrang tamis hindi nakakaumay."</p>
+                            </blockquote>
+                        </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -213,29 +232,6 @@
         
         <script src="/assets/scripts/hamburger.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-              slidesPerView: 1,
-              spaceBetween: 10,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              breakpoints: {
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 50,
-                },
-              },
-            });
-          </script>
+        <script src="/assets/scripts/testimonials-slider.js"></script>
     </body>
 </html>
