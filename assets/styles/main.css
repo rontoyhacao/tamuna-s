@@ -98,6 +98,19 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 
+footer .footer-container h4, footer .footer-container a {
+  color: black;
+}
+
+footer span {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  display: block;
+  font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+  font-family: 'Montserrat', sans-serif;
+}
+
 .cta-button {
   padding: .5em 2em;
   border: 1px solid #692511;
@@ -603,5 +616,53 @@ header .header-container nav .logo {
 
 .subscribe .subscribe-container h2, .subscribe .subscribe-container p {
   color: white;
+}
+
+footer {
+  background-color: #EEE0E0;
+  padding: 2rem 0;
+}
+
+footer .footer-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+}
+
+footer .footer-container .social-links {
+  text-align: center;
+}
+
+footer .footer-container .social-links img {
+  height: 4rem;
+}
+
+footer .footer-container .social-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+}
+
+footer .footer-container .social-links ul li {
+  margin: 0 .5rem;
+}
+
+footer .footer-container h4 {
+  margin-bottom: 1rem;
+}
+
+footer .footer-container ul li {
+  margin-bottom: 1rem;
+}
+
+footer .footer-container .contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

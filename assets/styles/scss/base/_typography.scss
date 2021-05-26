@@ -34,3 +34,16 @@ a {
     font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
     font-family: 'Montserrat', sans-serif;
 }
+footer {
+    .footer-container {
+        h4, a {
+            color: $black;
+        }
+    }
+    span {
+        @include wide-container;
+        display: block;
+        font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+        font-family: 'Montserrat', sans-serif;
+    }
+}

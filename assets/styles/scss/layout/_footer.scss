@@ -1,0 +1,31 @@
+footer {
+    background-color: $pink;
+    padding: 2rem 0;
+    .footer-container {
+        @include wide-container;
+        .social-links {
+            text-align: center;
+            img {
+                height: 4rem;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0;
+                li {
+                    margin: 0 .5rem;
+                }
+            }
+        }
+        h4 {
+            margin-bottom: 1rem;
+        }
+        ul li {
+            margin-bottom: 1rem;
+        }
+        .contact ul li {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
