@@ -107,6 +107,10 @@ a {
   color: #692511;
 }
 
+.form-button {
+  background-color: white;
+}
+
 .hamburger {
   border: none;
   background: transparent;
@@ -312,6 +316,17 @@ a {
 .swiper-slide img {
   max-width: 100%;
   height: auto;
+}
+
+input[type="email"] {
+  border: none;
+  border-radius: 2em;
+  padding: .5em 2em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: .5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
 }
 
 header {
@@ -564,5 +579,29 @@ header .header-container nav .logo {
 
 .testimonials .testimonials-container h2 {
   margin-bottom: 2rem;
+}
+
+.subscribe {
+  padding: 2rem 0;
+}
+
+.subscribe .subscribe-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/assets/images/subscribe-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/subscribe-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.subscribe .subscribe-container h2, .subscribe .subscribe-container p {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

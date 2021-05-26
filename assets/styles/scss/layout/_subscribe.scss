@@ -1,0 +1,20 @@
+.subscribe {
+    padding: 2rem 0;
+    .subscribe-container {
+        @include wide-container;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+          ), url(/assets/images/subscribe-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        h2, p {
+            color: $white;
+        }
+    }
+}
