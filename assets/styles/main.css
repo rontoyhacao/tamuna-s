@@ -327,8 +327,8 @@ footer span {
   z-index: 2;
   padding: 2rem;
   left: -100%;
-  -webkit-transition: left .2s;
-  transition: left .2s;
+  -webkit-transition: left .3s;
+  transition: left .3s;
 }
 
 .hamburger-sidebar ul {
