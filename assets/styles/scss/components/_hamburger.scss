@@ -130,3 +130,23 @@
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
               transform: rotate(45deg); }
+
+.hamburger-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: $pink;
+  height: 100vh;
+  z-index: 2;
+  padding: 2rem;
+  left: -100%;
+  transition: left .2s;
+  ul {
+    margin: 1rem 0;
+  }
+}
+.display {
+  left: 0;
+  box-shadow: 100px 0 200px 400px rgba(0, 0, 0, 0.5);
+  transition: box-shadow .5s ease;
+}

@@ -119,6 +119,15 @@ footer span {
   font-family: 'Montserrat', sans-serif;
 }
 
+.hamburger-sidebar li {
+  margin-bottom: 1rem;
+}
+
+.hamburger-sidebar li a {
+  font-size: clamp(1rem, calc((32 / 600) * 100vw), 2rem);
+  color: #692511;
+}
+
 .cta-button {
   padding: .5em 2em;
   border: 1px solid #692511;
@@ -307,6 +316,33 @@ footer span {
 .burger.burger-slide.open .burger-lines:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.hamburger-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #EEE0E0;
+  height: 100vh;
+  z-index: 2;
+  padding: 2rem;
+  left: -100%;
+  -webkit-transition: left .2s;
+  transition: left .2s;
+}
+
+.hamburger-sidebar ul {
+  margin: 1rem 0;
+}
+
+.display {
+  left: 0;
+  -webkit-box-shadow: 100px 0 200px 400px rgba(0, 0, 0, 0.5);
+          box-shadow: 100px 0 200px 400px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-box-shadow .5s ease;
+  transition: -webkit-box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease, -webkit-box-shadow .5s ease;
 }
 
 .swiper-container {

@@ -47,3 +47,10 @@ footer {
         font-family: 'Montserrat', sans-serif;
     }
 }
+.hamburger-sidebar li {
+    margin-bottom: 1rem;
+    a {
+        font-size: clamp(1rem, calc((32 / 600) * 100vw), 2rem);
+        color: $primary;
+    }
+}

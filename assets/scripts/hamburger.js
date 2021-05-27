@@ -1,6 +1,13 @@
-const hamburger = document.querySelector('.hamburger');
-const burger = document.querySelector('.burger');
+const hamburger = document.querySelectorAll('.hamburger');
+const burger = document.querySelectorAll('.burger');
 
-hamburger.addEventListener('click', () => {
-    burger.classList.toggle('open');
+const hamburgerSideBar = document.querySelector('.hamburger-sidebar');
+
+hamburger.forEach(toggler => {
+    toggler.addEventListener('click', () => {
+        burger.forEach(el => {
+            el.classList.toggle('open');
+        })
+        hamburgerSideBar.classList.toggle('display');
+    });
 });
