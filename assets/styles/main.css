@@ -419,6 +419,12 @@ header .header-container--home::before {
   z-index: -1;
   left: 0;
   top: 0;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  /* don't forget to set a duration! */
 }
 
 header .header-container nav {
@@ -486,12 +492,24 @@ header .header-container nav .logo {
   z-index: -1;
   right: 0;
   top: clamp(2rem, calc((192 / 800) * 100vw), 12rem);
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  /* don't forget to set a duration! */
 }
 
 .hero .hero-container_illustration img {
   max-width: 100%;
   height: auto;
   margin-left: 2rem;
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  /* don't forget to set a duration! */
 }
 
 .drip {

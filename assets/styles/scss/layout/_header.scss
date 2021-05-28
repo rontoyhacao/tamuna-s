@@ -16,6 +16,9 @@ header {
                 z-index: -1;
                 left: 0;
                 top: 0;
+
+                animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 1s; /* don't forget to set a duration! */
         }
         nav {
             @include space-between;
