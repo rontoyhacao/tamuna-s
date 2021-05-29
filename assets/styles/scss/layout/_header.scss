@@ -24,7 +24,7 @@ header {
             @include space-between;
             position: relative;
             .logo {
-                height: 4rem;
+                height: clamp(4rem, calc((128 / 1024) * 100vw), 8rem);
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -47,11 +47,6 @@ header {
                 width: 35rem;
                 height: 18rem;
                 background-size: contain;
-            }
-            nav {
-                .logo {
-                    height: 8rem;
-                }
             }
         }
     }

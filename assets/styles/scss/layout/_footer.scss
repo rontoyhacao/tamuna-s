@@ -6,7 +6,7 @@ footer {
         .social-links {
             text-align: center;
             img {
-                height: 4rem;
+                height: clamp(4rem, calc((128 / 1024) * 100vw), 8rem);
             }
             ul {
                 display: flex;
@@ -31,7 +31,7 @@ footer {
 }
 
 @media screen and (min-width: 33.75em) {
-    .footer-container {
+     footer .footer-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -40,3 +40,8 @@ footer {
         margin-right: 1rem;
     }
 }
+// @media screen and (min-width: 50em) {
+//     footer .footer-container .social-links img {
+//         height: 8rem;
+//     }
+// }

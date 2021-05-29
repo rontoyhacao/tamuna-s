@@ -18,3 +18,11 @@
         }
     }
 }
+@media screen and (min-width: 43.75em) {
+    .all-our-cakes-are .all-our-cakes-are-container ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 2rem;
+        text-align: left;
+    }
+}
