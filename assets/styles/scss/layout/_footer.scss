@@ -29,3 +29,14 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 33.75em) {
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-container > div {
+        margin-right: 1rem;
+    }
+}

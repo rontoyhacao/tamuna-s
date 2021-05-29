@@ -45,3 +45,61 @@
 .drip {
     width: 100%;
 }
+.drip-desktop {
+    display: none;
+}
+
+@media screen and (min-width: 50em) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero {
+        padding: 0 0 4rem;
+        .hero-container {
+            @include wide-container;
+            flex-direction: row;
+            &_content {
+                text-align: left;
+                width: 50%;
+                margin-top: 0;
+            }
+            &_illustration {
+                width: 50%;
+                img {
+                    position: absolute;
+                    margin-left: 0;
+                    max-height: clamp(20rem, calc((384 / 1024) * 100vw), 24rem);
+                }
+                &::before {
+                    height: 16rem;
+                    width: 36rem;
+                    // height: clamp(13rem, calc((256 / 800) * 100vw), 16rem);
+                    // width: clamp(26rem, calc((576 / 800) * 100vw), 36rem);
+                }
+            }
+        }
+    }
+    .drip {
+        display: none;
+    }
+    .drip-desktop {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 67.5em) {
+    .hero {
+        padding: 0 0 18rem;
+        .hero-container_illustration {
+            img {
+                max-height: initial;
+                margin-left: -6rem;
+            }
+            &::before {
+                height: 26rem;
+                width: 56rem;
+            }
+        }
+    }
+}
