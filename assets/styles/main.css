@@ -119,6 +119,10 @@ footer span {
   font-family: 'Montserrat', sans-serif;
 }
 
+.mobile-cart {
+  color: #692511;
+}
+
 .hamburger-sidebar li {
   margin-bottom: 1rem;
 }
@@ -634,7 +638,7 @@ header .header-container nav .desktop-nav {
   text-align: center;
 }
 
-.about .about-container h2 {
+.about .about-container .about-header-mobile {
   margin-bottom: 2rem;
 }
 
@@ -655,11 +659,36 @@ header .header-container nav .desktop-nav {
   position: absolute;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
-  height: 5rem;
-  width: 5rem;
+  height: clamp(5rem, calc((160 / 1000) * 100vw), 10rem);
+  width: clamp(5rem, calc((160 / 1000) * 100vw), 10rem);
   left: 0;
   bottom: -2rem;
   z-index: -1;
+}
+
+@media screen and (min-width: 50em) {
+  .about .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .about-container .about-header-mobile {
+    display: none;
+  }
+  .about .about-container_image {
+    width: 50%;
+  }
+  .about .about-container_content {
+    width: 50%;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .about .about-container_content h2 {
+    display: block;
+  }
+  .about .about-container::before {
+    bottom: -8rem;
+  }
 }
 
 .our-cakes {
@@ -688,6 +717,33 @@ header .header-container nav .desktop-nav {
 
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container h3 {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 50em) {
+  .our-cakes .our-cakes-container .our-cakes-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .our-cakes .our-cakes-container .our-cakes-grid li {
+    margin-bottom: 0;
+  }
+  .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container .cake-image-container {
+    min-height: 13rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .all-our-cakes-are {

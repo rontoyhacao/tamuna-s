@@ -20,3 +20,21 @@
         }
     }
 }
+@media screen and (min-width: 50em) {
+    .our-cakes .our-cakes-container .our-cakes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        gap: 2rem;
+        text-align: left;
+        margin-bottom: 2rem;
+        li {
+            margin-bottom: 0;
+            .cake-grid-container .cake-image-container {
+                min-height: 13rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

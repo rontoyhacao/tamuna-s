@@ -4,7 +4,7 @@
     .about-container {
         @include wide-container;
         text-align: center;
-        h2 {
+        .about-header-mobile {
             margin-bottom: 2rem;
         }
         &_image img {
@@ -23,11 +23,35 @@
             background-size: cover;
             position: absolute;
             transform: rotate(120deg);
-            height: 5rem;
-            width: 5rem;
+            height: clamp(5rem, calc((160 / 1000) * 100vw), 10rem);
+            width: clamp(5rem, calc((160 / 1000) * 100vw), 10rem);
             left: 0;
             bottom: -2rem;
             z-index: -1;
+        }
+    }
+}
+@media screen and (min-width: 50em) {
+    .about .about-container {
+        display: flex;
+        .about-header-mobile {
+            display: none;
+        }
+        &_image {
+            width: 50%;
+        }
+        &_content {
+            width: 50%;
+            text-align: left;
+            margin-left: 2rem;
+            h2 {
+                display: block;
+            }
+        }
+        &::before {
+            // height: 10rem;
+            // width: 10rem;
+            bottom: -8rem;
         }
     }
 }
