@@ -469,11 +469,14 @@ header .header-container nav .desktop-nav {
     height: 18rem;
     background-size: contain;
   }
-  header .header-container nav .hamburger {
-    display: none;
-  }
   header .header-container nav .logo {
     height: 8rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  header .header-container nav .hamburger {
+    display: none;
   }
   header .header-container nav .desktop-nav {
     display: initial;
@@ -565,11 +568,9 @@ header .header-container nav .desktop-nav {
 }
 
 @media screen and (min-width: 50em) {
-  body {
-    overflow-x: hidden;
-  }
   .hero {
     padding: 0 0 4rem;
+    overflow: hidden;
   }
   .hero .hero-container {
     width: 88%;

@@ -50,11 +50,9 @@
 }
 
 @media screen and (min-width: 50em) {
-    body {
-        overflow-x: hidden;
-    }
     .hero {
         padding: 0 0 4rem;
+        overflow: hidden;
         .hero-container {
             @include wide-container;
             flex-direction: row;
