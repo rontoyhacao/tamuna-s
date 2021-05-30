@@ -6,7 +6,7 @@
         flex-direction: column-reverse;
         position: relative;
         z-index: 1;
-        &_content {
+        &__content {
             @include wide-container;
             text-align: center;
             margin-top: 2rem;
@@ -14,7 +14,7 @@
                 margin-bottom: 2rem;
             }
         }
-        &_illustration {
+        &__illustration {
             overflow: hidden;
             &::before {
                 content: '';
@@ -56,12 +56,12 @@
         .hero-container {
             @include wide-container;
             flex-direction: row;
-            &_content {
+            &__content {
                 text-align: left;
                 width: 50%;
                 margin-top: 0;
             }
-            &_illustration {
+            &__illustration {
                 width: 50%;
                 img {
                     position: absolute;
@@ -89,7 +89,7 @@
 @media screen and (min-width: 67.5em) {
     .hero {
         padding: 0 0 18rem;
-        .hero-container_illustration {
+        .hero-container__illustration {
             img {
                 max-height: initial;
                 margin-left: -6rem;

@@ -137,6 +137,10 @@ footer span {
   font-weight: 600;
 }
 
+.cake-grid-container__title {
+  color: #692511;
+}
+
 .cta-button {
   padding: .5em 2em;
   border: 1px solid #692511;
@@ -145,6 +149,8 @@ footer span {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #692511;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 .cta-button:hover {
@@ -152,7 +158,7 @@ footer span {
   color: white;
 }
 
-.form-button {
+.cta-button--button {
   background-color: white;
 }
 
@@ -513,7 +519,7 @@ header .header-container nav .desktop-nav {
   z-index: 1;
 }
 
-.hero .hero-container_content {
+.hero .hero-container__content {
   width: 88%;
   margin: 0 auto;
   max-width: 69rem;
@@ -521,15 +527,15 @@ header .header-container nav .desktop-nav {
   margin-top: 2rem;
 }
 
-.hero .hero-container_content p {
+.hero .hero-container__content p {
   margin-bottom: 2rem;
 }
 
-.hero .hero-container_illustration {
+.hero .hero-container__illustration {
   overflow: hidden;
 }
 
-.hero .hero-container_illustration::before {
+.hero .hero-container__illustration::before {
   content: '';
   background-image: url(/assets/images/hero-splash2.png);
   background-repeat: no-repeat;
@@ -548,7 +554,7 @@ header .header-container nav .desktop-nav {
   /* don't forget to set a duration! */
 }
 
-.hero .hero-container_illustration img {
+.hero .hero-container__illustration img {
   max-width: 100%;
   height: auto;
   margin-left: 2rem;
@@ -582,20 +588,20 @@ header .header-container nav .desktop-nav {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .hero .hero-container_content {
+  .hero .hero-container__content {
     text-align: left;
     width: 50%;
     margin-top: 0;
   }
-  .hero .hero-container_illustration {
+  .hero .hero-container__illustration {
     width: 50%;
   }
-  .hero .hero-container_illustration img {
+  .hero .hero-container__illustration img {
     position: absolute;
     margin-left: 0;
     max-height: clamp(20rem, calc((384 / 1024) * 100vw), 24rem);
   }
-  .hero .hero-container_illustration::before {
+  .hero .hero-container__illustration::before {
     height: 16rem;
     width: 36rem;
   }
@@ -613,11 +619,11 @@ header .header-container nav .desktop-nav {
   .hero {
     padding: 0 0 18rem;
   }
-  .hero .hero-container_illustration img {
+  .hero .hero-container__illustration img {
     max-height: initial;
     margin-left: -6rem;
   }
-  .hero .hero-container_illustration::before {
+  .hero .hero-container__illustration::before {
     height: 26rem;
     width: 56rem;
   }
@@ -635,16 +641,16 @@ header .header-container nav .desktop-nav {
   text-align: center;
 }
 
-.about .about-container .about-header-mobile {
+.about .about-container__mobile-header {
   margin-bottom: 2rem;
 }
 
-.about .about-container_image img {
+.about .about-container__image img {
   max-width: 100%;
   height: auto;
 }
 
-.about .about-container_content h2 {
+.about .about-container__content h2 {
   display: none;
 }
 
@@ -672,18 +678,18 @@ header .header-container nav .desktop-nav {
     display: -ms-flexbox;
     display: flex;
   }
-  .about .about-container .about-header-mobile {
+  .about .about-container__mobile-header {
     display: none;
   }
-  .about .about-container_image {
+  .about .about-container__image {
     width: 50%;
   }
-  .about .about-container_content {
+  .about .about-container__content {
     width: 50%;
     text-align: left;
     margin-left: 2rem;
   }
-  .about .about-container_content h2 {
+  .about .about-container__content h2 {
     display: block;
   }
   .about .about-container::before {
@@ -710,9 +716,30 @@ header .header-container nav .desktop-nav {
   margin-bottom: 2rem;
 }
 
-.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container img {
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image {
+  position: relative;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image img {
   max-width: 100%;
   height: auto;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container h3 {
@@ -732,7 +759,7 @@ header .header-container nav .desktop-nav {
   .our-cakes .our-cakes-container .our-cakes-grid li {
     margin-bottom: 0;
   }
-  .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container .cake-image-container {
+  .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image {
     min-height: 13rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -816,12 +843,12 @@ header .header-container nav .desktop-nav {
           flex-direction: column-reverse;
 }
 
-.best-seller .best-seller-container_image img {
+.best-seller .best-seller-container__image img {
   max-width: 100%;
   height: auto;
 }
 
-.best-seller .best-seller-container_image::before {
+.best-seller .best-seller-container__image::before {
   content: '';
   background-image: url(/assets/images/hero-splash1.png);
   background-repeat: no-repeat;
@@ -834,7 +861,7 @@ header .header-container nav .desktop-nav {
   top: clamp(10rem, calc((352 / 600) * 100vw), 22rem);
 }
 
-.best-seller .best-seller-container_content h2 {
+.best-seller .best-seller-container__content h2 {
   margin: 1rem 0;
 }
 
@@ -849,15 +876,15 @@ header .header-container nav .desktop-nav {
             flex-direction: row;
     text-align: left;
   }
-  .best-seller .best-seller-container_content {
+  .best-seller .best-seller-container__content {
     width: 50%;
     margin-right: 2rem;
   }
-  .best-seller .best-seller-container_image {
+  .best-seller .best-seller-container__image {
     width: 50%;
     position: relative;
   }
-  .best-seller .best-seller-container_image::before {
+  .best-seller .best-seller-container__image::before {
     top: clamp(4rem, calc((256 / 1270) * 100vw), 16rem);
   }
 }

@@ -6,7 +6,7 @@
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
-        &_image {
+        &__image {
             img {
                 max-width: 100%;
                 height: auto;
@@ -24,7 +24,7 @@
                 top: clamp(10rem, calc((352 / 600) * 100vw), 22rem);
             }
         }
-        &_content {
+        &__content {
             h2 {
                 margin: 1rem 0;
             }
@@ -37,11 +37,11 @@
         .best-seller-container {
             flex-direction: row;
             text-align: left;
-            &_content {
+            &__content {
                 width: 50%;
                 margin-right: 2rem;
             }
-            &_image {
+            &__image {
                 width: 50%;
                 position: relative;
                 &::before {

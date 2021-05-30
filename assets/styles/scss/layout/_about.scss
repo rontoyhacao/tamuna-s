@@ -4,14 +4,14 @@
     .about-container {
         @include wide-container;
         text-align: center;
-        .about-header-mobile {
+        &__mobile-header {
             margin-bottom: 2rem;
         }
-        &_image img {
+        &__image img {
             max-width: 100%;
             height: auto;
         }
-        &_content {
+        &__content {
             h2 {
                 display: none;
             }
@@ -36,13 +36,13 @@
         padding: 4rem 0;
         .about-container {
             display: flex;
-            .about-header-mobile {
+            &__mobile-header {
                 display: none;
             }
-            &_image {
+            &__image {
                 width: 50%;
             }
-            &_content {
+            &__content {
                 width: 50%;
                 text-align: left;
                 margin-left: 2rem;
