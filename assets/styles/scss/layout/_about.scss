@@ -32,26 +32,29 @@
     }
 }
 @media screen and (min-width: 50em) {
-    .about .about-container {
-        display: flex;
-        .about-header-mobile {
-            display: none;
-        }
-        &_image {
-            width: 50%;
-        }
-        &_content {
-            width: 50%;
-            text-align: left;
-            margin-left: 2rem;
-            h2 {
-                display: block;
+    .about {
+        padding: 4rem 0;
+        .about-container {
+            display: flex;
+            .about-header-mobile {
+                display: none;
             }
-        }
-        &::before {
-            // height: 10rem;
-            // width: 10rem;
-            bottom: -8rem;
+            &_image {
+                width: 50%;
+            }
+            &_content {
+                width: 50%;
+                text-align: left;
+                margin-left: 2rem;
+                h2 {
+                    display: block;
+                }
+            }
+            &::before {
+                // height: 10rem;
+                // width: 10rem;
+                bottom: -8rem;
+            }
         }
     }
 }

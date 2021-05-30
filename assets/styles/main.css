@@ -346,8 +346,8 @@ footer span {
 
 .display {
   left: 0;
-  -webkit-box-shadow: 100px 0 200px 400px rgba(0, 0, 0, 0.5);
-          box-shadow: 100px 0 200px 400px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 100px 0 200px 700px rgba(0, 0, 0, 0.5);
+          box-shadow: 100px 0 200px 700px rgba(0, 0, 0, 0.5);
   -webkit-transition: -webkit-box-shadow .5s ease;
   transition: -webkit-box-shadow .5s ease;
   transition: box-shadow .5s ease;
@@ -664,6 +664,9 @@ header .header-container nav .desktop-nav {
 }
 
 @media screen and (min-width: 50em) {
+  .about {
+    padding: 4rem 0;
+  }
   .about .about-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -743,6 +746,12 @@ header .header-container nav .desktop-nav {
   }
 }
 
+@media screen and (min-width: 50em) {
+  .our-cakes {
+    padding: 4rem 0;
+  }
+}
+
 .all-our-cakes-are {
   padding: 2rem 0;
 }
@@ -779,6 +788,12 @@ header .header-container nav .desktop-nav {
         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: 2rem;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .all-our-cakes-are {
+    padding: 4rem 0;
   }
 }
 
@@ -823,6 +838,30 @@ header .header-container nav .desktop-nav {
   margin: 1rem 0;
 }
 
+@media screen and (min-width: 50em) {
+  .best-seller {
+    padding: 4rem 0;
+  }
+  .best-seller .best-seller-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .best-seller .best-seller-container_content {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  .best-seller .best-seller-container_image {
+    width: 50%;
+    position: relative;
+  }
+  .best-seller .best-seller-container_image::before {
+    top: clamp(4rem, calc((256 / 1270) * 100vw), 16rem);
+  }
+}
+
 .testimonials {
   padding: 2rem 0;
 }
@@ -833,6 +872,12 @@ header .header-container nav .desktop-nav {
 
 .testimonials .testimonials-container h2 {
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 50em) {
+  .testimonials {
+    padding: 4rem 0;
+  }
 }
 
 .subscribe {
@@ -857,6 +902,12 @@ header .header-container nav .desktop-nav {
 
 .subscribe .subscribe-container h2, .subscribe .subscribe-container p {
   color: white;
+}
+
+@media screen and (min-width: 50em) {
+  .subscribe {
+    padding: 4rem 0;
+  }
 }
 
 footer {

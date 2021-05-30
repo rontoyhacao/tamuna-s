@@ -31,3 +31,23 @@
         }
     }
 }
+@media screen and (min-width: 50em) {
+    .best-seller {
+        padding: 4rem 0;
+        .best-seller-container {
+            flex-direction: row;
+            text-align: left;
+            &_content {
+                width: 50%;
+                margin-right: 2rem;
+            }
+            &_image {
+                width: 50%;
+                position: relative;
+                &::before {
+                    top: clamp(4rem, calc((256 / 1270) * 100vw), 16rem);
+                }
+            }
+        }
+    }
+}
