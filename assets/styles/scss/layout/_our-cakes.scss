@@ -23,7 +23,7 @@
                         height: auto;
                     }
                     &:hover {
-                        transform: translateY(-1rem);
+                        transform: translateY(-.5rem);
                         transition: transform .5s;
                     }
                 }

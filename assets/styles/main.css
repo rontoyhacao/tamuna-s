@@ -455,13 +455,22 @@ header .header-container nav {
   position: relative;
 }
 
-header .header-container nav .logo {
+header .header-container nav .logo-link .logo {
   height: clamp(4rem, calc((128 / 1024) * 100vw), 8rem);
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+header .header-container nav .logo-link:hover .logo {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 
 header .header-container nav .desktop-nav {
@@ -734,8 +743,8 @@ header .header-container nav .desktop-nav {
 }
 
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image:hover {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
