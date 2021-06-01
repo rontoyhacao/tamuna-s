@@ -803,6 +803,22 @@ header .header-container nav .desktop-nav {
   height: auto;
 }
 
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image::before {
+  content: '';
+  background-image: url(/assets/images/hearts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  z-index: -1;
+  visibility: hidden;
+  -webkit-transition: top .2s;
+  transition: top .2s;
+}
+
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image:hover {
   -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
@@ -810,6 +826,11 @@ header .header-container nav .desktop-nav {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+}
+
+.our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container__image:hover::before {
+  visibility: visible;
+  top: -4rem;
 }
 
 .our-cakes .our-cakes-container .our-cakes-grid li .cake-grid-container h3 {

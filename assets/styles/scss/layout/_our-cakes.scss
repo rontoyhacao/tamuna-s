@@ -22,9 +22,27 @@
                         max-width: 100%;
                         height: auto;
                     }
+                    &::before {
+                        content: '';
+                        background-image: url(/assets/images/hearts.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 10rem;
+                        width: 10rem;
+                        position: absolute;
+                        top: 0;
+                        right: 50%;
+                        z-index: -1;
+                        visibility: hidden;
+                        transition: top .2s;
+                    }
                     &:hover {
                         transform: translateY(-.5rem);
                         transition: transform .5s;
+                        &::before {
+                            visibility: visible;
+                            top: -4rem;
+                        }
                     }
                 }
                 h3 {
