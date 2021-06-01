@@ -112,7 +112,6 @@ footer .footer-container h4, footer .footer-container a {
 
 footer .footer-container a {
   position: relative;
-  white-space: nowrap;
 }
 
 footer .footer-container a::before {
