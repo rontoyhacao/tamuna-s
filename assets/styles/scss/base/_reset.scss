@@ -54,3 +54,11 @@ a {
 button {
 	cursor: pointer;
 }
+::selection {
+	background-color: $darkPink;
+	color: $white;
+}
+::-moz-selection {
+	background-color: $darkPink;
+	color: $white;
+}

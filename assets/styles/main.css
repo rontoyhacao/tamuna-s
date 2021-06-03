@@ -66,6 +66,21 @@ button {
   cursor: pointer;
 }
 
+::-moz-selection {
+  background-color: #F3A8A6;
+  color: white;
+}
+
+::selection {
+  background-color: #F3A8A6;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #F3A8A6;
+  color: white;
+}
+
 h1, h2 {
   font-family: 'Pacifico', cursive;
   color: #692511;
@@ -147,10 +162,6 @@ footer span {
   display: block;
   font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
   font-family: 'Montserrat', sans-serif;
-}
-
-.mobile-cart {
-  color: #692511;
 }
 
 .hamburger-sidebar li {
