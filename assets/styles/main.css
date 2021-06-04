@@ -435,29 +435,26 @@ footer span {
 
 .hamburger-sidebar {
   position: fixed;
-  left: 0;
+  left: -100%;
   top: 0;
-  background-color: #EEE0E0;
+  background-color: white;
   height: 100vh;
+  width: 100vw;
   z-index: 2;
   padding: 2rem;
-  left: -100%;
   -webkit-transition: left .3s;
   transition: left .3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hamburger-sidebar ul {
   margin: 1rem 0;
+  text-align: center;
 }
 
 .display {
   left: 0;
-  -webkit-box-shadow: 100px 0 200px 700px rgba(0, 0, 0, 0.5);
-          box-shadow: 100px 0 200px 700px rgba(0, 0, 0, 0.5);
-  -webkit-transition: -webkit-box-shadow .5s ease;
-  transition: -webkit-box-shadow .5s ease;
-  transition: box-shadow .5s ease;
-  transition: box-shadow .5s ease, -webkit-box-shadow .5s ease;
 }
 
 .swiper-container {
