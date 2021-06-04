@@ -448,6 +448,15 @@ footer span {
           box-sizing: border-box;
 }
 
+.hamburger-sidebar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .hamburger-sidebar ul {
   margin: 1rem 0;
   text-align: center;

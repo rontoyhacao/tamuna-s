@@ -143,6 +143,10 @@
   // left: -100%;
   transition: left .3s;
   box-sizing: border-box;
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+  }
   ul {
     margin: 1rem 0;
     text-align: center;
