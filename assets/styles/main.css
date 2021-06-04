@@ -122,11 +122,15 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 
-footer a {
+footer h4, footer a {
+  color: black;
+}
+
+footer .footer-container a {
   position: relative;
 }
 
-footer a::before {
+footer .footer-container a::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -145,24 +149,24 @@ footer a::before {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-footer a:hover::before {
+footer .footer-container a:hover::before {
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
 }
 
-footer h4, footer a {
-  color: black;
-}
-
-footer span {
+footer .footer-lower span {
   width: 88%;
   margin: 0 auto;
   max-width: 69rem;
   display: block;
   font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
   font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-lower span a {
+  text-decoration: underline;
 }
 
 .hamburger-sidebar a {

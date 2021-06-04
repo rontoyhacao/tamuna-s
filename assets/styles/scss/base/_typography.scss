@@ -35,35 +35,42 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 footer {
-    a {
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background: currentColor;
-            top: 100%;
-            left: 0;
-            pointer-events: none;
-    
-            transform-origin: 100% 50%;
-            transform: scale3d(0, 1, 1);
-            transition: transform 0.3s;
-        }
-        &:hover::before {
-            transform-origin: 0% 50%;
-            transform: scale3d(1, 1, 1);
-        }
-    }
     h4, a {
         color: $black;
     }
-    span {
-        @include wide-container;
-        display: block;
-        font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
-        font-family: 'Montserrat', sans-serif;
+    .footer-container {
+        a {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: currentColor;
+                top: 100%;
+                left: 0;
+                pointer-events: none;
+        
+                transform-origin: 100% 50%;
+                transform: scale3d(0, 1, 1);
+                transition: transform 0.3s;
+            }
+            &:hover::before {
+                transform-origin: 0% 50%;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    }
+    .footer-lower {
+        span {
+            @include wide-container;
+            display: block;
+            font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+            font-family: 'Montserrat', sans-serif;
+            a {
+                text-decoration: underline;
+            }
+        }
     }
 }
 .hamburger-sidebar a {
