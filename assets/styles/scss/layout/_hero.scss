@@ -28,16 +28,16 @@
                 right: 0;
                 top: clamp(2rem, calc((192 / 800) * 100vw), 12rem);
 
-                animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-                animation-duration: 1s; /* don't forget to set a duration! */
+                // animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+                // animation-duration: 1s; /* don't forget to set a duration! */
             }
             img {
                 max-width: 100%;
                 height: auto;
                 margin-left: 2rem;
 
-                animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-                animation-duration: 1s; /* don't forget to set a duration! */
+                // animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+                // animation-duration: 1s; /* don't forget to set a duration! */
             }
         }
     }

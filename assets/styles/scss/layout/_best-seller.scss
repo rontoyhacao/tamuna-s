@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column-reverse;
         &__image {
+            overflow: hidden;
             img {
                 max-width: 100%;
                 height: auto;
@@ -44,6 +45,7 @@
             &__image {
                 width: 50%;
                 position: relative;
+                overflow: initial;
                 &::before {
                     top: clamp(4rem, calc((256 / 1270) * 100vw), 16rem);
                 }

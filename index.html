@@ -15,8 +15,7 @@
         <link rel="stylesheet" href="/assets/styles/main.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
     <header>
@@ -69,8 +68,8 @@
                     <p>Cakes are not just meant to be stucked in certain flavors. Celebrate your special days with a fruity taste of Tamuna's Fruit Fusion Cakes!</p>
                     <a href="#" class="cta-button">Browse Cakes</a>
                 </div>
-                <div class="hero-container__illustration animate__animated">
-                    <img src="/assets/images/hero-cake.png" alt="">
+                <div class="hero-container__illustration">
+                    <img src="/assets/images/hero-cake.png" alt="" data-aos="fade-left">
                 </div>
             </div>
         </section>
@@ -80,7 +79,7 @@
             <div class="about-container">
                 <h2 class="about-container__mobile-header">About Tamuna's Fruit Fusion Cakes</h2>
                 <div class="about-container__image">
-                    <img src="/assets/images/about-image.png" alt="Tamuna's cakes">
+                    <img src="/assets/images/about-image.png" alt="Tamuna's cakes" data-aos="fade-right">
                 </div>
                 <div class="about-container__content">
                     <h2>About Tamuna's Fruit Fusion Cakes</h2>
@@ -96,7 +95,7 @@
                 <ul class="our-cakes-grid">
                     <li>
                         <div class="cake-grid-container">
-                            <div class="cake-grid-container__image">
+                            <div class="cake-grid-container__image" data-aos="fade-up">
                                 <a href="#"></a>
                                 <img src="/assets/images/fruit-cake.png" alt="fruit cake image">
                             </div>
@@ -106,7 +105,7 @@
                     </li>
                     <li>
                         <div class="cake-grid-container">
-                            <div class="cake-grid-container__image">
+                            <div class="cake-grid-container__image" data-aos="fade-up" data-aos-delay="50">
                                 <a href="#"></a>
                                 <img src="/assets/images/fruit-fusion-cakes.png" alt="fruit fusion cake image">
                             </div>
@@ -116,7 +115,7 @@
                     </li>
                     <li>
                         <div class="cake-grid-container">
-                            <div class="cake-grid-container__image">
+                            <div class="cake-grid-container__image" data-aos="fade-up" data-aos-delay="100">
                                 <a href="#"></a>
                                 <img src="/assets/images/minimalist-cakes.png" alt="minimalist cake image">
                             </div>
@@ -126,7 +125,7 @@
                     </li>
                     <li>
                         <div class="cake-grid-container">
-                            <div class="cake-grid-container__image">
+                            <div class="cake-grid-container__image" data-aos="fade-up" data-aos-delay="150">
                                 <a href="#"></a>
                                 <img src="/assets/images/mini-cakes.png" alt="mini cake image">
                             </div>
@@ -169,7 +168,7 @@
                     <a href="#" class="cta-button">Order Now</a>
                 </div>
                 <div class="best-seller-container__image">
-                    <img src="/assets/images/best-seller.png" alt="Strawberry Shortcake">
+                    <img src="/assets/images/best-seller.png" alt="Strawberry Shortcake" data-aos="fade-left">
                 </div>
             </div>
         </section>
@@ -268,6 +267,13 @@
         <span>© Copyright 2020 | Tamuna’s Fruit Fusion Cakes | All Rights Reserved.</span>
     </footer>
         
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+            });
+        </script>
         <script src="/assets/scripts/hamburger.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="/assets/scripts/testimonials-slider.js"></script>
