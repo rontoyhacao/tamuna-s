@@ -166,3 +166,8 @@
 .display {
   left: 0;
 }
+@media screen and (min-width: 64em) {
+  .hamburger-sidebar {
+    visibility: hidden;
+  }
+}
