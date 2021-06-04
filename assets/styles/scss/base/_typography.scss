@@ -69,7 +69,7 @@ footer {
     }
 }
 .hamburger-sidebar li {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     a {
         font-size: clamp(1rem, calc((32 / 600) * 100vw), 2rem);
         color: $primary;
