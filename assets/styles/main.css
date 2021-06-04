@@ -164,13 +164,10 @@ footer span {
   font-family: 'Montserrat', sans-serif;
 }
 
-.hamburger-sidebar li {
-  margin-bottom: 2rem;
-}
-
-.hamburger-sidebar li a {
+.hamburger-sidebar a {
   font-size: clamp(1rem, calc((32 / 600) * 100vw), 2rem);
   color: #692511;
+  font-weight: 600;
 }
 
 .desktop-nav li a {
@@ -446,6 +443,16 @@ footer span {
   transition: left .3s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hamburger-sidebar__header {
@@ -457,20 +464,26 @@ footer span {
           justify-content: flex-end;
 }
 
-.hamburger-sidebar ul {
+.hamburger-sidebar__links {
   margin: 1rem 0;
   text-align: center;
-  height: 80vh;
+}
+
+.hamburger-sidebar__links li {
+  margin-bottom: 2rem;
+}
+
+.hamburger-sidebar__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hamburger-sidebar__social-links li {
+  margin: 0 1rem;
 }
 
 .display {

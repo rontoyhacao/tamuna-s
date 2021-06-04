@@ -140,24 +140,30 @@
   width: 100vw;
   z-index: 2;
   padding: 2rem;
-  // left: -100%;
   transition: left .3s;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &__header {
     display: flex;
     justify-content: flex-end;
   }
-  ul {
+  &__links {
     margin: 1rem 0;
     text-align: center;
-    height: 80vh;
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+  &__social-links {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    li {
+      margin: 0 1rem;
+    }
   }
 }
 .display {
   left: 0;
-  // box-shadow: 100px 0 200px 700px rgba(0, 0, 0, 0.5);
-  // transition: box-shadow .5s ease;
 }
