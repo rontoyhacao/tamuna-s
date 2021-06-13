@@ -907,7 +907,6 @@ header .header-container nav .desktop-nav {
     -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: 2rem;
-    text-align: left;
     margin-bottom: 2rem;
   }
   .our-cakes .our-cakes-container .our-cakes-grid li {
@@ -968,7 +967,6 @@ header .header-container nav .desktop-nav {
     -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: 2rem;
-    text-align: left;
   }
 }
 
