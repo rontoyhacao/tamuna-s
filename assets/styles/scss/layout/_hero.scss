@@ -1,6 +1,7 @@
 .hero {
     padding: 2rem 0;
     background-color: $pink;
+    position: relative;
     .hero-container {
         display: flex;
         flex-direction: column-reverse;
@@ -40,6 +41,15 @@
                 // animation-duration: 1s; /* don't forget to set a duration! */
             }
         }
+    }
+    &__heading {
+        text-align: center;
+    }
+    .section-divider {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 }
 .drip {

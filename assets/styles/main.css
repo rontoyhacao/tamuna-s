@@ -672,6 +672,7 @@ header .header-container nav .desktop-nav {
 .hero {
   padding: 2rem 0;
   background-color: #EEE0E0;
+  position: relative;
 }
 
 .hero .hero-container {
@@ -719,6 +720,17 @@ header .header-container nav .desktop-nav {
   max-width: 100%;
   height: auto;
   margin-left: 2rem;
+}
+
+.hero__heading {
+  text-align: center;
+}
+
+.hero .section-divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .drip {
