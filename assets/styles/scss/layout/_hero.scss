@@ -43,6 +43,7 @@
         }
     }
     &--about {
+        overflow: hidden;
         &::before {
             content: '';
             background-image: url(/assets/images/hero-mango-cake.png);

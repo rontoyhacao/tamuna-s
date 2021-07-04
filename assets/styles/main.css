@@ -722,6 +722,10 @@ header .header-container nav .desktop-nav {
   margin-left: 2rem;
 }
 
+.hero--about {
+  overflow: hidden;
+}
+
 .hero--about::before {
   content: '';
   background-image: url(/assets/images/hero-mango-cake.png);
