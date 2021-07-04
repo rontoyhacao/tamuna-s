@@ -722,8 +722,23 @@ header .header-container nav .desktop-nav {
   margin-left: 2rem;
 }
 
+.hero--about::before {
+  content: '';
+  background-image: url(/assets/images/hero-mango-cake.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 6rem;
+  width: 18rem;
+  position: absolute;
+  right: -6rem;
+  bottom: 0;
+  z-index: 0;
+}
+
 .hero__heading {
   text-align: center;
+  position: relative;
+  z-index: 999;
 }
 
 .hero .section-divider {
