@@ -742,7 +742,7 @@ header .header-container nav .desktop-nav {
 .hero__heading {
   text-align: center;
   position: relative;
-  z-index: 999;
+  z-index: 1;
 }
 
 .hero .section-divider {
