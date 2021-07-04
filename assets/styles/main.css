@@ -731,8 +731,8 @@ header .header-container nav .desktop-nav {
   background-image: url(/assets/images/hero-mango-cake.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 6rem;
-  width: 18rem;
+  height: clamp(6rem, calc((256 / 1200) * 100vw), 16rem);
+  width: clamp(18rem, calc((784 / 1200) * 100vw), 49rem);
   position: absolute;
   right: -6rem;
   bottom: 0;
@@ -791,6 +791,12 @@ header .header-container nav .desktop-nav {
     height: 16rem;
     width: 36rem;
   }
+  .hero--about {
+    padding: 4rem 0;
+  }
+  .hero--about::before {
+    right: -12rem;
+  }
   .drip {
     display: none;
   }
@@ -812,6 +818,9 @@ header .header-container nav .desktop-nav {
   .hero .hero-container__illustration::before {
     height: 26rem;
     width: 56rem;
+  }
+  .hero--about {
+    padding: 5rem 0;
   }
 }
 

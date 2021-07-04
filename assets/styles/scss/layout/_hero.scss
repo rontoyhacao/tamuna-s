@@ -49,10 +49,15 @@
             background-image: url(/assets/images/hero-mango-cake.png);
             background-repeat: no-repeat;
             background-size: contain;
-            height: 6rem;
-            width: 18rem;
+            // height: 6rem;
+            height: clamp(6rem, calc((256 / 1200) * 100vw), 16rem);
+            // width: 18rem;
+            width: clamp(18rem, calc((784 / 1200) * 100vw), 49rem);
+            // height: 16rem;
+            // width: 49rem;
             position: absolute;
             right: -6rem;
+            // right: -14rem;
             bottom: 0;
             z-index: 0;
         }
@@ -103,6 +108,12 @@
                 }
             }
         }
+        &--about {
+            padding: 4rem 0;
+            &::before {
+                right: -12rem;
+            }
+        }
     }
     .drip {
         display: none;
@@ -125,6 +136,9 @@
                 height: 26rem;
                 width: 56rem;
             }
+        }
+        &--about {
+            padding: 5rem 0;
         }
     }
 }
