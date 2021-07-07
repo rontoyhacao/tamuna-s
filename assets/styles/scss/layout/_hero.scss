@@ -42,11 +42,10 @@
             }
         }
     }
-    &--about {
+    &--illustration {
         overflow: hidden;
         &::before {
             content: '';
-            background-image: url(/assets/images/hero-mango-cake.png);
             background-repeat: no-repeat;
             background-size: contain;
             // height: 6rem;
@@ -72,6 +71,17 @@
         left: 0;
         bottom: 0;
         width: 100%;
+    }
+}
+
+.hero-about {
+    &::before {
+        background-image: url(/assets/images/hero-mango-cake.png);
+    }
+}
+.hero-our-cakes {
+    &::before {
+        background-image: url(/assets/images/hero-strawberry.png);
     }
 }
 .drip {
@@ -108,7 +118,7 @@
                 }
             }
         }
-        &--about {
+        &--illustration {
             padding: 4rem 0;
             &::before {
                 right: -12rem;
@@ -137,7 +147,7 @@
                 width: 56rem;
             }
         }
-        &--about {
+        &--illustration {
             padding: 5rem 0;
         }
     }

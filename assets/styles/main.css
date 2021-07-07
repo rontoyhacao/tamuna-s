@@ -722,13 +722,12 @@ header .header-container nav .desktop-nav {
   margin-left: 2rem;
 }
 
-.hero--about {
+.hero--illustration {
   overflow: hidden;
 }
 
-.hero--about::before {
+.hero--illustration::before {
   content: '';
-  background-image: url(/assets/images/hero-mango-cake.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: clamp(6rem, calc((256 / 1200) * 100vw), 16rem);
@@ -750,6 +749,14 @@ header .header-container nav .desktop-nav {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.hero-about::before {
+  background-image: url(/assets/images/hero-mango-cake.png);
+}
+
+.hero-our-cakes::before {
+  background-image: url(/assets/images/hero-strawberry.png);
 }
 
 .drip {
@@ -791,10 +798,10 @@ header .header-container nav .desktop-nav {
     height: 16rem;
     width: 36rem;
   }
-  .hero--about {
+  .hero--illustration {
     padding: 4rem 0;
   }
-  .hero--about::before {
+  .hero--illustration::before {
     right: -12rem;
   }
   .drip {
@@ -819,7 +826,7 @@ header .header-container nav .desktop-nav {
     height: 26rem;
     width: 56rem;
   }
-  .hero--about {
+  .hero--illustration {
     padding: 5rem 0;
   }
 }
