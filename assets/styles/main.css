@@ -759,6 +759,22 @@ header .header-container nav .desktop-nav {
   background-image: url(/assets/images/hero-strawberry.png);
 }
 
+.hero-gallery::before {
+  background-image: url(/assets/images/hero-fusion.png);
+}
+
+.hero-faq::before {
+  background-image: url(/assets/images/hero-blueberry.png);
+}
+
+.hero-blog::before {
+  background-image: url(/assets/images/hero-minimalist.png);
+}
+
+.hero-contact::before {
+  background-image: url(/assets/images/hero-strawberryshortcake.png);
+}
+
 .drip {
   width: 100%;
 }
@@ -802,7 +818,7 @@ header .header-container nav .desktop-nav {
     padding: 4rem 0;
   }
   .hero--illustration::before {
-    right: -12rem;
+    right: -14rem;
   }
   .drip {
     display: none;

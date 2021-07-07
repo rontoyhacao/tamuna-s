@@ -84,6 +84,26 @@
         background-image: url(/assets/images/hero-strawberry.png);
     }
 }
+.hero-gallery {
+    &::before {
+        background-image: url(/assets/images/hero-fusion.png);
+    }
+}
+.hero-faq {
+    &::before {
+        background-image: url(/assets/images/hero-blueberry.png);
+    }
+}
+.hero-blog {
+    &::before {
+        background-image: url(/assets/images/hero-minimalist.png);
+    }
+}
+.hero-contact {
+    &::before {
+        background-image: url(/assets/images/hero-strawberryshortcake.png);
+    }
+}
 .drip {
     width: 100%;
 }
@@ -121,7 +141,7 @@
         &--illustration {
             padding: 4rem 0;
             &::before {
-                right: -12rem;
+                right: -14rem;
             }
         }
     }
