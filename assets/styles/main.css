@@ -1292,4 +1292,39 @@ footer .footer .footer-lower span:first-of-type {
   height: auto;
   border-radius: 1rem;
 }
+
+.behind-tamunas {
+  padding: 2rem 0;
+}
+
+.behind-tamunas .behind-tamunas-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.behind-tamunas .behind-tamunas-container__image {
+  position: relative;
+}
+
+.behind-tamunas .behind-tamunas-container__image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(/assets/images/splash3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: clamp(24rem, calc((608 / 625) * 100vw), 38rem);
+  width: clamp(32rem, calc((832 / 625) * 100vw), 52rem);
+  z-index: -1;
+}
+
+.behind-tamunas .behind-tamunas-container__image img {
+  max-width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */

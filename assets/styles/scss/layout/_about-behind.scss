@@ -1,0 +1,27 @@
+.behind-tamunas {
+    padding: 2rem 0;
+    .behind-tamunas-container {
+        @include wide-container;
+        text-align: center;
+        &__image {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url(/assets/images/splash3.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: clamp(24rem, calc((608 / 625) * 100vw), 38rem);
+                width: clamp(32rem, calc((832 / 625) * 100vw), 52rem);
+                z-index: -1;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
