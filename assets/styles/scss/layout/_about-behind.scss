@@ -23,5 +23,12 @@
                 height: auto;
             }
         }
+        &__content .heading {
+            font-size: 1.25rem;
+            span {
+                color: $darkPink;
+                font-size: inherit;
+            }
+        }
     }
 }

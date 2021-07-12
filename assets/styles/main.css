@@ -1327,4 +1327,13 @@ footer .footer .footer-lower span:first-of-type {
   max-width: 100%;
   height: auto;
 }
+
+.behind-tamunas .behind-tamunas-container__content .heading {
+  font-size: 1.25rem;
+}
+
+.behind-tamunas .behind-tamunas-container__content .heading span {
+  color: #F3A8A6;
+  font-size: inherit;
+}
 /*# sourceMappingURL=main.css.map */
