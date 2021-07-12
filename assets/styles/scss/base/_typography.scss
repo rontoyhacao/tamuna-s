@@ -30,6 +30,10 @@ p {
     font-family: 'Montserrat', sans-serif;
     margin: 1rem 0;
 }
+span {
+    font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+    font-family: 'Montserrat', sans-serif;
+}
 a {
     font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
     font-family: 'Montserrat', sans-serif;
@@ -65,8 +69,6 @@ footer {
         span {
             @include wide-container;
             display: block;
-            font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
-            font-family: 'Montserrat', sans-serif;
             a {
                 text-decoration: underline;
             }

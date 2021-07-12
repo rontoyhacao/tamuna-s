@@ -1,0 +1,11 @@
+.about-us {
+    .about-us-container {
+        @include wide-container;
+        text-align: center;
+        &__image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+    }
+}

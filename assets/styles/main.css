@@ -117,6 +117,11 @@ p {
   margin: 1rem 0;
 }
 
+span {
+  font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
+  font-family: 'Montserrat', sans-serif;
+}
+
 a {
   font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
   font-family: 'Montserrat', sans-serif;
@@ -161,8 +166,6 @@ footer .footer-lower span {
   margin: 0 auto;
   max-width: 69rem;
   display: block;
-  font-size: clamp(0.875rem, calc((16 / 600) * 100vw), 1rem);
-  font-family: 'Montserrat', sans-serif;
 }
 
 footer .footer-lower span a {
@@ -1275,5 +1278,18 @@ footer .footer .footer-lower span:first-of-type {
   .section-divider {
     height: 60px;
   }
+}
+
+.about-us .about-us-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.about-us .about-us-container__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
