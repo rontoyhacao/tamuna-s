@@ -1353,6 +1353,8 @@ footer .footer .footer-lower span:first-of-type {
 }
 
 .how-it-started .how-it-started-container__image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
