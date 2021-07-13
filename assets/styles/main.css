@@ -1280,6 +1280,10 @@ footer .footer .footer-lower span:first-of-type {
   }
 }
 
+.about-us {
+  padding: 2rem 0;
+}
+
 .about-us .about-us-container {
   width: 88%;
   margin: 0 auto;
@@ -1335,5 +1339,20 @@ footer .footer .footer-lower span:first-of-type {
 .behind-tamunas .behind-tamunas-container__content .heading span {
   color: #F3A8A6;
   font-size: inherit;
+}
+
+.how-it-started {
+  padding: 2rem 0;
+}
+
+.how-it-started .how-it-started-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.how-it-started .how-it-started-container__image img {
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
