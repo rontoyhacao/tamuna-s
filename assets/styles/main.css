@@ -1357,4 +1357,68 @@ footer .footer .footer-lower span:first-of-type {
   height: auto;
   border-radius: 1rem;
 }
+
+.services {
+  padding: 2rem 0;
+  background-color: #EEE0E0;
+}
+
+.services .services-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+}
+
+.services .services-container .cake-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services .services-container .cake-details__content {
+  margin: 1rem 0;
+}
+
+.services .services-container .cake-details__content span {
+  display: block;
+  margin: 1rem 0;
+}
+
+.services .services-container__flavors ul li {
+  margin: 1rem 0;
+}
+
+.services .services-container__flavors ul li div {
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+}
+
+.services .services-container__flavors ul li div h4 {
+  color: white;
+}
+
+.services .services-container__flavors ul li .mango {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/assets/images/mango-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/mango-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services .services-container__flavors ul li .strawberry {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/assets/images/strawberry-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/strawberry-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services .services-container__flavors ul li .blueberry {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/assets/images/blueberry-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/blueberry-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */

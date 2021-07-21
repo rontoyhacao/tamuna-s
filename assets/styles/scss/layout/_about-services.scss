@@ -1,0 +1,58 @@
+.services {
+    padding: 2rem 0;
+    background-color: $pink;
+    .services-container {
+        @include wide-container;
+        text-align: center;
+        .cake-details {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            &__content {
+                margin: 1rem 0;
+                span {
+                    display: block;
+                    margin: 1rem 0;
+                }
+            }
+        }
+        &__flavors {
+            ul li {
+                margin: 1rem 0;
+                div {
+                    border-radius: 1rem;
+                    color: $white;
+                    padding: 1rem;
+                    h4 {
+                        color: $white;
+                    }
+                }
+                .mango {
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.45), 
+                        rgba(0, 0, 0, 0.45)), url(/assets/images/mango-bg.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                }
+                .strawberry {
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.45), 
+                        rgba(0, 0, 0, 0.45)), url(/assets/images/strawberry-bg.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                }
+                .blueberry {
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.45), 
+                        rgba(0, 0, 0, 0.45)), url(/assets/images/blueberry-bg.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                }
+            }
+        }
+    }
+}
