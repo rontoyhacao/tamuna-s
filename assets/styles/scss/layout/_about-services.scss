@@ -1,9 +1,11 @@
 .services {
-    padding: 2rem 0;
+    // padding: 2rem 0;
     background-color: $pink;
+    position: relative;
     .services-container {
         @include wide-container;
         text-align: center;
+        padding: 2rem 0;
         .cake-details {
             img {
                 max-width: 100%;
@@ -53,6 +55,17 @@
                         background-position: center;
                 }
             }
+        }
+    }
+    .section-divider {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        &--top {
+            transform: rotate(180deg);
+        }
+        &--bottom {
+            bottom: 0;
         }
     }
 }

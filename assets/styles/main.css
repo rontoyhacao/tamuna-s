@@ -1359,8 +1359,8 @@ footer .footer .footer-lower span:first-of-type {
 }
 
 .services {
-  padding: 2rem 0;
   background-color: #EEE0E0;
+  position: relative;
 }
 
 .services .services-container {
@@ -1368,6 +1368,7 @@ footer .footer .footer-lower span:first-of-type {
   margin: 0 auto;
   max-width: 69rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
 .services .services-container .cake-details img {
@@ -1420,5 +1421,20 @@ footer .footer .footer-lower span:first-of-type {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.services .section-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.services .section-divider--top {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.services .section-divider--bottom {
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
