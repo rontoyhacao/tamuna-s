@@ -1374,6 +1374,7 @@ footer .footer .footer-lower span:first-of-type {
 .services .services-container .cake-details img {
   max-width: 100%;
   height: auto;
+  margin: 1rem 0;
 }
 
 .services .services-container .cake-details__content {
@@ -1436,5 +1437,11 @@ footer .footer .footer-lower span:first-of-type {
 
 .services .section-divider--bottom {
   bottom: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .services .services-container {
+    padding: 4rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
