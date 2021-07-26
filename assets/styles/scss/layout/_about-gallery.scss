@@ -1,0 +1,11 @@
+.about-gallery {
+    padding: 2rem 0;
+    .about-gallery-container {
+        @include wide-container;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+    }
+}

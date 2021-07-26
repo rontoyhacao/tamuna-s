@@ -1299,6 +1299,7 @@ footer .footer .footer-lower span:first-of-type {
 
 .behind-tamunas {
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .behind-tamunas .behind-tamunas-container {
@@ -1443,5 +1444,21 @@ footer .footer .footer-lower span:first-of-type {
   .services .services-container {
     padding: 4rem 0;
   }
+}
+
+.about-gallery {
+  padding: 2rem 0;
+}
+
+.about-gallery .about-gallery-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+}
+
+.about-gallery .about-gallery-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
