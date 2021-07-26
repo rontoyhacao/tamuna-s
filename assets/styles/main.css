@@ -1461,4 +1461,76 @@ footer .footer .footer-lower span:first-of-type {
   height: auto;
   border-radius: 1rem;
 }
+
+.get-in-touch {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(/assets/images/get-in-touch-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/assets/images/get-in-touch-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.get-in-touch .get-in-touch-container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 69rem;
+  text-align: center;
+  padding: 4rem 0;
+  color: white;
+}
+
+.get-in-touch .get-in-touch-container h2, .get-in-touch .get-in-touch-container a {
+  color: white;
+}
+
+.get-in-touch .get-in-touch-container .get-in-touch-contact {
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.get-in-touch .get-in-touch-container .get-in-touch-contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.get-in-touch .get-in-touch-container .get-in-touch-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.get-in-touch .get-in-touch-container .get-in-touch-social i {
+  font-size: 1.5rem;
+}
+
+.get-in-touch .get-in-touch-container .section-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.get-in-touch .get-in-touch-container .section-divider--top {
+  top: -1px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.get-in-touch .get-in-touch-container .section-divider--bottom {
+  -webkit-transform: none;
+          transform: none;
+  bottom: -1px;
+}
+
+@media screen and (min-width: 50em) {
+  .get-in-touch .section-divider {
+    height: 60px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
