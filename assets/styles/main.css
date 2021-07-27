@@ -1297,6 +1297,22 @@ footer .footer .footer-lower span:first-of-type {
   border-radius: 1rem;
 }
 
+@media screen and (min-width: 50em) {
+  .about-us .about-us-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .about-us .about-us-container__content {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  .about-us .about-us-container__image {
+    width: 50%;
+  }
+}
+
 .behind-tamunas {
   padding: 2rem 0;
   overflow: hidden;
@@ -1309,11 +1325,11 @@ footer .footer .footer-lower span:first-of-type {
   text-align: center;
 }
 
-.behind-tamunas .behind-tamunas-container__image {
+.behind-tamunas .behind-tamunas-container .behind-flex__image {
   position: relative;
 }
 
-.behind-tamunas .behind-tamunas-container__image::before {
+.behind-tamunas .behind-tamunas-container .behind-flex__image::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1328,18 +1344,37 @@ footer .footer .footer-lower span:first-of-type {
   z-index: -1;
 }
 
-.behind-tamunas .behind-tamunas-container__image img {
+.behind-tamunas .behind-tamunas-container .behind-flex__image img {
   max-width: 100%;
   height: auto;
 }
 
-.behind-tamunas .behind-tamunas-container__content .heading {
+.behind-tamunas .behind-tamunas-container .behind-flex__content .heading {
   font-size: 1.25rem;
 }
 
-.behind-tamunas .behind-tamunas-container__content .heading span {
+.behind-tamunas .behind-tamunas-container .behind-flex__content .heading span {
   color: #F3A8A6;
   font-size: inherit;
+}
+
+@media screen and (min-width: 50em) {
+  .behind-tamunas .behind-tamunas-container h2 {
+    margin-bottom: 2rem;
+  }
+  .behind-tamunas .behind-tamunas-container .behind-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .behind-tamunas .behind-tamunas-container .behind-flex__content {
+    width: 50%;
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .behind-tamunas .behind-tamunas-container .behind-flex__image {
+    width: 50%;
+  }
 }
 
 .how-it-started {
