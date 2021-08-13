@@ -1306,10 +1306,10 @@ footer .footer .footer-lower span:first-of-type {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    gap: 2rem;
   }
   .about-us .about-us-container__content {
     width: 50%;
-    margin-right: 2rem;
   }
   .about-us .about-us-container__image {
     width: 50%;
@@ -1372,11 +1372,11 @@ footer .footer .footer-lower span:first-of-type {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 2rem;
   }
   .behind-tamunas .behind-tamunas-container .behind-flex__content {
     width: 50%;
     text-align: left;
-    margin-left: 2rem;
   }
   .behind-tamunas .behind-tamunas-container .behind-flex__image {
     width: 50%;
@@ -1406,6 +1406,12 @@ footer .footer .footer-lower span:first-of-type {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
+}
+
+@media screen and (min-width: 50em) {
+  .how-it-started-container__image {
+    margin: 2rem 0;
+  }
 }
 
 .services {
@@ -1492,6 +1498,13 @@ footer .footer .footer-lower span:first-of-type {
 @media screen and (min-width: 50em) {
   .services .services-container {
     padding: 4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .services .services-container__content {
+    text-align: left;
   }
 }
 

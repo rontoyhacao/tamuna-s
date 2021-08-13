@@ -45,10 +45,10 @@
             }
             .behind-flex {
                 display: flex;
+                gap: 2rem;
                 &__content {
                     width: 50%;
                     text-align: left;
-                    margin-left: 2rem;
                 }
                 &__image {
                     width: 50%;

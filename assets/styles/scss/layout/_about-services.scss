@@ -74,5 +74,10 @@
 @media screen and (min-width: 50em) {
     .services .services-container {
         padding: 4rem 0;
+        display: flex;
+        gap: 2rem;
+        &__content {
+            text-align: left;
+        }
     }
 }

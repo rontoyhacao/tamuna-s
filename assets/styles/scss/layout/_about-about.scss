@@ -17,9 +17,9 @@
         .about-us-container {
             display: flex;
             text-align: left;
+            gap: 2rem;
             &__content {
                 width: 50%;
-                margin-right: 2rem;
             }
             &__image {
                 width: 50%;
