@@ -1298,6 +1298,9 @@ footer .footer .footer-lower span:first-of-type {
 }
 
 @media screen and (min-width: 50em) {
+  .about-us {
+    padding: 4rem 0;
+  }
   .about-us .about-us-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1359,6 +1362,9 @@ footer .footer .footer-lower span:first-of-type {
 }
 
 @media screen and (min-width: 50em) {
+  .behind-tamunas {
+    padding: 4rem 0;
+  }
   .behind-tamunas .behind-tamunas-container h2 {
     margin-bottom: 2rem;
   }
@@ -1386,6 +1392,14 @@ footer .footer .footer-lower span:first-of-type {
   margin: 0 auto;
   max-width: 69rem;
   text-align: center;
+}
+
+.how-it-started .how-it-started-container__image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
 }
 
 .how-it-started .how-it-started-container__image img {

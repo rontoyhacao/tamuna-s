@@ -37,19 +37,22 @@
 }
 
 @media screen and (min-width: 50em) {
-    .behind-tamunas .behind-tamunas-container {
-        h2 {
-            margin-bottom: 2rem;
-        }
-        .behind-flex {
-            display: flex;
-            &__content {
-                width: 50%;
-                text-align: left;
-                margin-left: 2rem;
+    .behind-tamunas {
+        padding: 4rem 0;
+        .behind-tamunas-container {
+            h2 {
+                margin-bottom: 2rem;
             }
-            &__image {
-                width: 50%;
+            .behind-flex {
+                display: flex;
+                &__content {
+                    width: 50%;
+                    text-align: left;
+                    margin-left: 2rem;
+                }
+                &__image {
+                    width: 50%;
+                }
             }
         }
     }

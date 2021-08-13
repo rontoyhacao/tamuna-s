@@ -12,15 +12,18 @@
 }
 
 @media screen and (min-width: 50em) {
-    .about-us .about-us-container {
-        display: flex;
-        text-align: left;
-        &__content {
-            width: 50%;
-            margin-right: 2rem;
-        }
-        &__image {
-            width: 50%;
+    .about-us {
+        padding: 4rem 0;
+        .about-us-container {
+            display: flex;
+            text-align: left;
+            &__content {
+                width: 50%;
+                margin-right: 2rem;
+            }
+            &__image {
+                width: 50%;
+            }
         }
     }
 }

@@ -4,9 +4,9 @@
         @include wide-container;
         text-align: center;
         &__image {
-            // display: grid;
-            // grid-template-columns: repeat(auto-fit, 16rem);
-            // gap: 1rem;
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 1rem;
             img {
                 max-width: 100%;
                 height: auto;
