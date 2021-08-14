@@ -1497,13 +1497,28 @@ footer .footer .footer-lower span:first-of-type {
 
 @media screen and (min-width: 50em) {
   .services .services-container {
-    padding: 4rem 0;
+    padding: 6rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 2rem;
   }
   .services .services-container__content {
+    text-align: left;
+  }
+  .services .services-container__content .cake-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .services .services-container__content .cake-details img {
+    margin-left: -18rem;
+  }
+  .services .services-container__flavors h3 {
     text-align: left;
   }
 }
@@ -1516,6 +1531,11 @@ footer .footer .footer-lower span:first-of-type {
   width: 88%;
   margin: 0 auto;
   max-width: 69rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
 }
 
 .about-gallery .about-gallery-container img {

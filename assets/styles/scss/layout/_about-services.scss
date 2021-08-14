@@ -73,10 +73,21 @@
 
 @media screen and (min-width: 50em) {
     .services .services-container {
-        padding: 4rem 0;
+        padding: 6rem 0;
         display: flex;
         gap: 2rem;
         &__content {
+            text-align: left;
+            .cake-details {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                img {
+                    margin-left: -18rem;
+                }
+            }
+        }
+        &__flavors h3 {
             text-align: left;
         }
     }
